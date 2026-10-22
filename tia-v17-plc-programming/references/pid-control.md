@@ -10,7 +10,7 @@ Before specifying networks, inspect the active project and establish:
 - Installed TIA Portal version/update and the available PID instruction and technology-object versions. Select the version actually available to the project; a PID_Compact V2.3 entry seen in one environment is not a universal version claim.
 - The target PID instruction, existing technology object and instance DB (if any), hosting block/OB, and the project’s current LAD conventions.
 - The process variable and setpoint, their data types and engineering units, source module/channel, actuator/output path, and any existing tag or block interface definitions.
-- Applicable project manuals, CPU and module manuals, and the TIA Portal V17 Information System/F1 entry for the selected instruction.
+- Inspect the active project's `Manual/` folder or configured manual library for applicable project, CPU, and module manuals, plus the TIA Portal V17 Information System/F1 entry for the selected instruction. If the matching manual is unavailable or inaccessible, ask the user to provide it before relying on device-specific claims.
 
 Use the source precedence in [source-policy.md](source-policy.md). The local S7-1200 system manual cited below is a 2018 baseline, not proof that a feature, limit, pin, or behavior applies to every V17 installation, CPU, firmware, or module. Verify exact feature and range claims against the installed TIA V17 help and the manuals for the configured hardware.
 
