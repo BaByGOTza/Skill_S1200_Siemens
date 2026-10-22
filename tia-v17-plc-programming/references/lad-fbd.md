@@ -2,6 +2,8 @@
 
 Use this reference when the user asks for ladder logic (LAD) or function block diagram (FBD) logic in TIA Portal.
 
+For PID-specific control and commissioning requests, use the [PID control workflow](pid-control.md).
+
 ## Gather requirements before designing
 
 - Inspect the active project's blocks, tags, DB references, and conventions before proposing networks.

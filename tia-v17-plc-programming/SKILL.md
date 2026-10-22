@@ -14,6 +14,7 @@ Use this skill for Siemens S7-1200/S7-1500 programming tasks targeting TIA Porta
 3. Load only the relevant reference:
    - SCL source or template work: [SCL workflow](references/scl.md)
    - LAD/FBD logic design: [LAD/FBD workflow](references/lad-fbd.md)
+   - PID control, PID technology-object, and analog PID requests: [PID control workflow](references/pid-control.md)
    - Documentation selection or hardware-specific facts: [source policy](references/source-policy.md)
 4. Verify version- and CPU-specific claims against the TIA Portal V17 Information System/F1 and the manual for the target CPU/firmware.
 5. Implement only the requested scope. Preserve established interfaces and types. If DB members change, update the matching TIA DB interface and `docs/db-settings/` reference in the same change.
