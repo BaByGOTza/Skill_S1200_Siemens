@@ -50,7 +50,7 @@ Reference links:
 - Siemens S7-1200 programmable controller documentation entry: https://support.industry.siemens.com/cs/document/109759862/simatic-s7-s7-1200-programmable-controller
 - Siemens S7-1200/S7-1500 programming guideline: https://support.industry.siemens.com/cs/document/81318674/programming-guideline-for-s7-1200-s7-1500
 
-The complete Siemens PDFs remain in the relevant local PLC project's `Manual/` folder. Do not add vendor PDFs to the GitHub repository; store official links, document identifiers, section/page references, and concise original summaries instead.
+The user also keeps Siemens manuals in the local library `G:\My Drive\Manual\PLC Siemens`. Use that library when it is available in the active environment, together with the active PLC project's `Manual/` folder. Because a mounted `G:` drive is not guaranteed on another computer or project, the reusable skill must not assume this path exists: tell the user to provide the matching manual or point to the project's configured manual library when it is unavailable. Do not add vendor PDFs to the GitHub repository; store official links, document identifiers, section/page references, and concise original summaries instead.
 
 ## Proposed repository changes
 
