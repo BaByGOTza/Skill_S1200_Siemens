@@ -9,16 +9,18 @@ Use this skill for Siemens S7-1200/S7-1500 programming tasks targeting TIA Porta
 
 ## Workflow
 
-1. Inspect the active workspace for relevant PLC source, block interfaces, DB references, project instructions, and `Manual/` files. Read enough context to understand the existing behavior before proposing changes.
-2. Establish the target CPU and firmware, block inputs and outputs, data types, expected behavior, and fault handling. If a missing detail can affect correctness or safety, ask a focused question before implementing; do not invent requirements.
-3. Load only the relevant reference:
+1. Before implementing PLC logic, read and follow the mandatory [manual library workflow](references/manual-library.md) to discover, inventory, and read all accessible documents. Record coverage per file; library coverage does not make every document applicable to the target.
+2. Inspect the active workspace for relevant PLC source, block interfaces, DB references, project instructions, and `Manual/` files. Read enough context to understand the existing behavior before proposing changes.
+3. Establish the target CPU and firmware, block inputs and outputs, data types, expected behavior, and fault handling. If a missing detail can affect correctness or safety, ask a focused question before implementing; do not invent requirements.
+4. Load only the relevant reference:
    - SCL source or template work: [SCL workflow](references/scl.md)
    - LAD/FBD logic design: [LAD/FBD workflow](references/lad-fbd.md)
    - PID control, PID technology-object, and analog PID requests: [PID control workflow](references/pid-control.md)
    - Documentation selection or hardware-specific facts: [source policy](references/source-policy.md)
-4. Verify version- and CPU-specific claims against the TIA Portal V17 Information System/F1 and the manual for the target CPU/firmware.
-5. Implement only the requested scope. Preserve established interfaces and types. If DB members change, update the matching TIA DB interface and `docs/db-settings/` reference in the same change.
-6. Validate the result using the available project checks. Report assumptions, faults and edge cases addressed, checks run, and whether compilation was actually performed in the target TIA Portal.
+   - Manual discovery and read coverage: [manual library workflow](references/manual-library.md)
+5. Verify version- and CPU-specific claims against the TIA Portal V17 Information System/F1 and the manual for the target CPU/firmware.
+6. Implement only the requested scope. Preserve established interfaces and types. If DB members change, update the matching TIA DB interface and `docs/db-settings/` reference in the same change.
+7. Validate the result using the available project checks. Report assumptions, faults and edge cases addressed, checks run, and whether compilation was actually performed in the target TIA Portal.
 
 ## Boundaries
 

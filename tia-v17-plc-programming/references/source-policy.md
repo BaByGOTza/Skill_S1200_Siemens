@@ -9,6 +9,12 @@ Use the most specific authoritative source available. Verify version-specific sy
 3. **Active project sources and local manuals:** inspect the project's `Manual/` directory, existing PLC sources, block interfaces, DB documentation, and project instructions for device facts and established conventions.
 4. **Siemens S7-1200/S7-1500 Programming Guideline V16:** use as general programming guidance only. Its document revision is not the TIA Portal version and does not prove that a feature is supported in TIA Portal V17 or a particular CPU/firmware.
 
+## Library coverage, applicability, and reporting
+
+- **Coverage:** follow the [manual library workflow](manual-library.md) to inventory and read every accessible document in the active project's `Manual/` folder and configured library before implementation. Track read coverage per file; a partial read is not a full read.
+- **Applicability:** complete library coverage does not make every document evidence for the task. Use only documents that match the identified target CPU, firmware, relevant devices, and task. Do not transfer device-specific facts across product families.
+- **Reporting:** state per-file read coverage and identify files that were partial, unreadable, or inaccessible, including the reason when known. If a manual is inaccessible and full coverage cannot be achieved, say the library was not fully read and ask the user for an accessible copy or source.
+
 ## Reference links
 
 - [TIA Portal V17 Information System](https://docs.tia.siemens.cloud/r/en-us/v17)
