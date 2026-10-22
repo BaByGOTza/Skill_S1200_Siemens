@@ -144,13 +144,14 @@ Expected: no output and exit code `0`; all internal links resolve and official S
 Run:
 
 ```powershell
-git diff --check
+git diff origin/main...HEAD --check
 git status --short
-git diff --stat
-git diff HEAD --name-only -- '*.pdf'
+git diff --stat origin/main...HEAD
+git diff --name-only origin/main...HEAD
+git diff --name-only origin/main...HEAD -- '*.pdf'
 ```
 
-Expected: no whitespace errors; only the focused PID reference and its routing/cross-reference files are changed; the final command prints no paths.
+Expected: no whitespace errors or uncommitted changes. The branch diff includes only the approved design spec and plan plus the PID reference and its two routing/cross-reference files. The final command prints no paths.
 
 - [ ] **Step 3: Report validation accurately**
 
