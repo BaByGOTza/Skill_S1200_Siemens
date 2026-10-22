@@ -25,6 +25,10 @@ Maintain a per-task inventory with each file's name or identifier, type, and one
 
 For every status other than `fully read`, record the specific reason and, when relevant, pages or sections covered and missing. Distinguish access, listing, unsupported-format, extraction, OCR, and context/coverage limitations. If complete coverage cannot be achieved, state that the library was not fully read and ask the user for an accessible copy, a supported format, or a smaller source copy. Do not present a partial read as complete.
 
+## Record verification evidence
+
+Do not report successful source reading, TIA Portal compilation, simulation, or hardware verification unless the corresponding evidence has been recorded. Record the source and read coverage, or the relevant tool/compiler or test setup and results, as applicable. If evidence is absent or insufficient, report the activity as `not verified` or `not performed`; do not imply that it succeeded.
+
 ## Select applicable evidence and cite it
 
 Reading the complete library does not make every document applicable. Identify the target CPU and firmware, modules, sensors, actuators, and other relevant devices; use device-specific facts only from documents that match the target. Keep product families distinct and do not transfer limits, behavior, or configuration details from one family to another.
